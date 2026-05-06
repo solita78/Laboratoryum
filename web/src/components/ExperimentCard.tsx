@@ -1,0 +1,45 @@
+import { Link } from "react-router-dom";
+import type { LaboratoryumExperiment } from "../types/content";
+
+type Props = {
+  experiment: LaboratoryumExperiment;
+};
+
+const STATUS_LABEL: Record<LaboratoryumExperiment["status"], string> = {
+  draft: "Borrador",
+  in_progress: "En curso",
+  published: "Publicado",
+};
+
+export function ExperimentCard({ experiment }: Props) {
+  return (
+    <article className="exp-card">
+      <div className="exp-card-head">
+        <p className="lab-meta">{experiment.code}</p>
+        <span className={`status-badge status-${experiment.status}`}>{STATUS_LABEL[experiment.status]}</span>
+      </div>
+
+      <h3>{experiment.title}</h3>
+      <p>{experiment.summary}</p>
+
+      {experiment.tags.length > 0 && (
+        <ul className="exp-tags" aria-label="Tags del experimento">
+          {experiment.tags.map((tag) => (
+            <li key={tag} className="exp-tag">
+              {tag}
+            </li>
+          ))}
+        </ul>
+      )}
+
+      <dl>
+        <dt className="lab-meta">Kit derivado</dt>
+        <dd>{experiment.kit}</dd>
+      </dl>
+
+      <Link className="lab-focus card-link" to={`/experimentos/${experiment.slug.split("/").pop()}`}>
+        Ver experimento
+      </Link>
+    </article>
+  );
+}

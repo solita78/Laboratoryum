@@ -1,0 +1,27 @@
+<svg width="1600" height="1200" viewBox="0 0 1600 1200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="1200" fill="#F6F8F7"/>
+
+  <g stroke="#E9EEEC" stroke-width="1">
+    <path d="M120 160V860"/><path d="M176 160V860"/><path d="M232 160V860"/><path d="M288 160V860"/><path d="M344 160V860"/><path d="M400 160V860"/><path d="M456 160V860"/><path d="M512 160V860"/><path d="M568 160V860"/><path d="M624 160V860"/><path d="M680 160V860"/><path d="M736 160V860"/><path d="M792 160V860"/><path d="M848 160V860"/><path d="M904 160V860"/><path d="M960 160V860"/><path d="M1016 160V860"/><path d="M1072 160V860"/><path d="M1128 160V860"/><path d="M1184 160V860"/><path d="M1240 160V860"/><path d="M1296 160V860"/><path d="M1352 160V860"/><path d="M1408 160V860"/><path d="M1464 160V860"/>
+    <path d="M120 160H1480"/><path d="M120 216H1480"/><path d="M120 272H1480"/><path d="M120 328H1480"/><path d="M120 384H1480"/><path d="M120 440H1480"/><path d="M120 496H1480"/><path d="M120 552H1480"/><path d="M120 608H1480"/><path d="M120 664H1480"/><path d="M120 720H1480"/><path d="M120 776H1480"/><path d="M120 832H1480"/>
+  </g>
+
+  <circle cx="800" cy="500" r="170" stroke="#0E1F1A" stroke-width="12"/>
+  <circle cx="800" cy="500" r="170" stroke="#22B07D" stroke-width="4"/>
+
+  <path d="M754 408V474L696 586H904L846 474V408" stroke="#0E1F1A" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M726 534H874" stroke="#22B07D" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="770" cy="502" r="9" fill="#22B07D"/>
+  <circle cx="802" cy="518" r="7" fill="#22B07D"/>
+  <circle cx="834" cy="496" r="6" fill="#22B07D"/>
+
+  <path d="M962 553L996 564" stroke="#0E1F1A" stroke-width="4"/>
+  <path d="M704 360L680 324" stroke="#0E1F1A" stroke-width="4"/>
+  <path d="M713 626L687 664" stroke="#0E1F1A" stroke-width="4"/>
+  <circle cx="996" cy="564" r="13" fill="#0E1F1A"/>
+  <circle cx="680" cy="324" r="13" fill="#0E1F1A"/>
+  <circle cx="687" cy="664" r="13" fill="#0E1F1A"/>
+
+  <text x="800" y="992" text-anchor="middle" font-family="Avenir Next, Helvetica Neue, Arial, sans-serif" font-size="122" letter-spacing="4" fill="#0E1F1A">LABORATORYUM</text>
+  <text x="800" y="1070" text-anchor="middle" font-family="Avenir Next, Helvetica Neue, Arial, sans-serif" font-size="34" letter-spacing="3" fill="#3A5A4F">WEB · IA · CONTEXTO · MEMORIA</text>
+</svg>

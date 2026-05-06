@@ -1,0 +1,86 @@
+<svg width="1400" height="1400" viewBox="0 0 1400 1400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="120" y1="120" x2="1280" y2="1280" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#07110c"/>
+      <stop offset="1" stop-color="#0f2018"/>
+    </linearGradient>
+    <linearGradient id="ringGrad" x1="290" y1="220" x2="1110" y2="1180" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#b7ffcb"/>
+      <stop offset="1" stop-color="#4fa36a"/>
+    </linearGradient>
+    <linearGradient id="axisGrad" x1="700" y1="360" x2="700" y2="1040" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#b7ffcb"/>
+      <stop offset="1" stop-color="#8bffb5"/>
+    </linearGradient>
+    <filter id="softGlow" x="250" y="250" width="900" height="900" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="18" result="blur"/>
+      <feBlend mode="screen" in="SourceGraphic" in2="blur"/>
+    </filter>
+  </defs>
+
+  <rect x="0" y="0" width="1400" height="1400" fill="url(#bgGrad)"/>
+
+  <!-- outer archive frame -->
+  <rect x="108" y="108" width="1184" height="1184" rx="18" stroke="#1f3b2c" stroke-width="8"/>
+  <rect x="144" y="144" width="1112" height="1112" rx="14" stroke="#264c39" stroke-width="2"/>
+
+  <!-- registration ticks -->
+  <g stroke="#2b5841" stroke-width="3" stroke-linecap="round">
+    <line x1="700" y1="108" x2="700" y2="138"/>
+    <line x1="700" y1="1262" x2="700" y2="1292"/>
+    <line x1="108" y1="700" x2="138" y2="700"/>
+    <line x1="1262" y1="700" x2="1292" y2="700"/>
+  </g>
+
+  <!-- central construction -->
+  <g filter="url(#softGlow)">
+    <circle cx="700" cy="700" r="392" stroke="url(#ringGrad)" stroke-width="24"/>
+    <circle cx="700" cy="700" r="330" stroke="#2b5841" stroke-width="2" stroke-dasharray="8 14"/>
+
+    <line x1="700" y1="352" x2="700" y2="1048" stroke="url(#axisGrad)" stroke-width="18" stroke-linecap="round"/>
+    <line x1="352" y1="700" x2="1048" y2="700" stroke="url(#axisGrad)" stroke-width="18" stroke-linecap="round"/>
+
+    <circle cx="700" cy="700" r="140" fill="#0b1711" stroke="#8bffb5" stroke-width="12"/>
+    <circle cx="700" cy="700" r="90" fill="none" stroke="#4fa36a" stroke-width="3" stroke-dasharray="4 10"/>
+
+    <rect x="640" y="448" width="120" height="22" rx="8" fill="#b7ffcb"/>
+    <rect x="930" y="688" width="22" height="120" rx="8" fill="#b7ffcb"/>
+    <rect x="448" y="688" width="22" height="120" rx="8" fill="#b7ffcb"/>
+    <rect x="640" y="930" width="120" height="22" rx="8" fill="#b7ffcb"/>
+  </g>
+
+  <!-- subtle reference nodes: 25 experiments -->
+  <g fill="#8bffb5" opacity="0.85">
+    <circle cx="908" cy="508" r="5"/>
+    <circle cx="965" cy="586" r="5"/>
+    <circle cx="995" cy="678" r="5"/>
+    <circle cx="991" cy="775" r="5"/>
+    <circle cx="952" cy="863" r="5"/>
+    <circle cx="883" cy="931" r="5"/>
+    <circle cx="794" cy="972" r="5"/>
+    <circle cx="697" cy="986" r="5"/>
+    <circle cx="600" cy="970" r="5"/>
+    <circle cx="512" cy="928" r="5"/>
+    <circle cx="444" cy="859" r="5"/>
+    <circle cx="407" cy="771" r="5"/>
+    <circle cx="404" cy="675" r="5"/>
+    <circle cx="433" cy="582" r="5"/>
+    <circle cx="489" cy="503" r="5"/>
+    <circle cx="567" cy="446" r="5"/>
+    <circle cx="659" cy="415" r="5"/>
+    <circle cx="756" cy="417" r="5"/>
+    <circle cx="847" cy="448" r="5"/>
+    <circle cx="779" cy="535" r="4"/>
+    <circle cx="836" cy="615" r="4"/>
+    <circle cx="845" cy="713" r="4"/>
+    <circle cx="804" cy="802" r="4"/>
+    <circle cx="725" cy="858" r="4"/>
+    <circle cx="629" cy="866" r="4"/>
+  </g>
+
+  <!-- wordmark -->
+  <g>
+    <text x="700" y="1175" text-anchor="middle" font-family="'IBM Plex Mono','Avenir Next Condensed','Menlo',monospace" font-size="76" letter-spacing="7" fill="#d7ffe7">LABORATORYUM</text>
+    <text x="700" y="1224" text-anchor="middle" font-family="'IBM Plex Mono','Menlo',monospace" font-size="20" letter-spacing="5" fill="#4fa36a">EVIDENCE · CONTEXT · MEMORY</text>
+  </g>
+</svg>

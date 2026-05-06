@@ -1,0 +1,252 @@
+[
+  {
+    "lab": "LAB-001",
+    "title": "La URL que desaparece",
+    "slug": "/experimentos/la-url-que-desaparece",
+    "title_tag": "La URL que desaparece | Experimento LAB-001",
+    "meta_description": "Cómo evitar que una URL rota destruya contexto y evidencia: redirecciones, archivo web y trazabilidad.",
+    "keywords": "url rota, link rot, redirecciones 301, preservacion web, web archiving",
+    "canonical": "https://laboratoryum.example/experimentos/la-url-que-desaparece",
+    "file": "/Users/soledadarismendi/Sites/Laboratoryum/CONTENIDO/LABORATORYUM-OPS/LAB-001/05-publicacion.md"
+  },
+  {
+    "lab": "LAB-002",
+    "title": "El enlace sin contexto",
+    "slug": "/experimentos/el-enlace-sin-contexto",
+    "title_tag": "El enlace sin contexto | Experimento LAB-002",
+    "meta_description": "Método para compartir enlaces con contexto y mejorar comprensión, citabilidad y trazabilidad.",
+    "keywords": "enlace sin contexto, compartir links con contexto, citacion web, curacion editorial",
+    "canonical": "https://laboratoryum.example/experimentos/el-enlace-sin-contexto",
+    "file": "/Users/soledadarismendi/Sites/Laboratoryum/CONTENIDO/LABORATORYUM-OPS/LAB-002/05-publicacion.md"
+  },
+  {
+    "lab": "LAB-003",
+    "title": "El acceso que filtra el conocimiento",
+    "slug": "/experimentos/el-acceso-que-filtra-el-conocimiento",
+    "title_tag": "El acceso que filtra el conocimiento | Experimento LAB-003",
+    "meta_description": "Qué se pierde cuando el contenido queda tras login o paywall y cómo reducir ese costo documental.",
+    "keywords": "paywall y acceso abierto, conocimiento restringido, citabilidad, acceso a fuentes",
+    "canonical": "https://laboratoryum.example/experimentos/el-acceso-que-filtra-el-conocimiento",
+    "file": "/Users/soledadarismendi/Sites/Laboratoryum/CONTENIDO/LABORATORYUM-OPS/LAB-003/05-publicacion.md"
+  },
+  {
+    "lab": "LAB-004",
+    "title": "La fuente que no se puede verificar",
+    "slug": "/experimentos/la-fuente-que-no-se-puede-verificar",
+    "title_tag": "La fuente que no se puede verificar | Experimento LAB-004",
+    "meta_description": "Checklist para convertir afirmaciones en fuentes verificables y auditables.",
+    "keywords": "fuente verificable, evidencia documental, procedencia de datos, fact checking",
+    "canonical": "https://laboratoryum.example/experimentos/la-fuente-que-no-se-puede-verificar",
+    "file": "/Users/soledadarismendi/Sites/Laboratoryum/CONTENIDO/LABORATORYUM-OPS/LAB-004/05-publicacion.md"
+  },
+  {
+    "lab": "LAB-005",
+    "title": "El archivo que se rompe con el tiempo",
+    "slug": "/experimentos/el-archivo-que-se-rompe-con-el-tiempo",
+    "title_tag": "El archivo que se rompe con el tiempo | Experimento LAB-005",
+    "meta_description": "Protocolo de preservación digital para evitar pérdida de archivos por obsolescencia.",
+    "keywords": "preservacion digital, formatos obsoletos, durabilidad de archivos, migracion documental",
+    "canonical": "https://laboratoryum.example/experimentos/el-archivo-que-se-rompe-con-el-tiempo",
+    "file": "/Users/soledadarismendi/Sites/Laboratoryum/CONTENIDO/LABORATORYUM-OPS/LAB-005/05-publicacion.md"
+  },
+  {
+    "lab": "LAB-006",
+    "title": "El agente que cita sin leer",
+    "slug": "/experimentos/el-agente-que-cita-sin-leer",
+    "title_tag": "El agente que cita sin leer | Experimento LAB-006",
+    "meta_description": "Errores comunes cuando un agente IA cita sin lectura completa y cómo mitigarlos.",
+    "keywords": "agente ia cita sin leer, alucinaciones de citacion, retrieval parcial, grounding",
+    "canonical": "https://laboratoryum.example/experimentos/el-agente-que-cita-sin-leer",
+    "file": "/Users/soledadarismendi/Sites/Laboratoryum/CONTENIDO/LABORATORYUM-OPS/LAB-006/05-publicacion.md"
+  },
+  {
+    "lab": "LAB-007",
+    "title": "La respuesta que no muestra su rastro",
+    "slug": "/experimentos/la-respuesta-que-no-muestra-su-rastro",
+    "title_tag": "La respuesta que no muestra su rastro | Experimento LAB-007",
+    "meta_description": "Guía para hacer trazables y auditables respuestas de IA con evidencia verificable.",
+    "keywords": "trazabilidad de respuestas ia, auditoria de prompts, provenance ai, confianza",
+    "canonical": "https://laboratoryum.example/experimentos/la-respuesta-que-no-muestra-su-rastro",
+    "file": "/Users/soledadarismendi/Sites/Laboratoryum/CONTENIDO/LABORATORYUM-OPS/LAB-007/05-publicacion.md"
+  },
+  {
+    "lab": "LAB-008",
+    "title": "El contenido que envejece sin aviso",
+    "slug": "/experimentos/el-contenido-que-envejece-sin-aviso",
+    "title_tag": "El contenido que envejece sin aviso | Experimento LAB-008",
+    "meta_description": "Sistema de señales de vigencia para evitar decisiones sobre contenido caducado.",
+    "keywords": "contenido desactualizado, freshness content, fecha de actualizacion, versionado",
+    "canonical": "https://laboratoryum.example/experimentos/el-contenido-que-envejece-sin-aviso",
+    "file": "/Users/soledadarismendi/Sites/Laboratoryum/CONTENIDO/LABORATORYUM-OPS/LAB-008/05-publicacion.md"
+  },
+  {
+    "lab": "LAB-009",
+    "title": "La versión que reemplaza a la memoria",
+    "slug": "/experimentos/la-version-que-reemplaza-a-la-memoria",
+    "title_tag": "La versión que reemplaza a la memoria | Experimento LAB-009",
+    "meta_description": "Cómo preservar historial editorial y contexto al publicar nuevas versiones.",
+    "keywords": "historial de cambios, versionado editorial, transparencia de edicion, changelog",
+    "canonical": "https://laboratoryum.example/experimentos/la-version-que-reemplaza-a-la-memoria",
+    "file": "/Users/soledadarismendi/Sites/Laboratoryum/CONTENIDO/LABORATORYUM-OPS/LAB-009/05-publicacion.md"
+  },
+  {
+    "lab": "LAB-010",
+    "title": "La interfaz que oculta el origen",
+    "slug": "/experimentos/la-interfaz-que-oculta-el-origen",
+    "title_tag": "La interfaz que oculta el origen | Experimento LAB-010",
+    "meta_description": "Patrones de interfaz para transparentar fuentes y evitar credibilidad artificial.",
+    "keywords": "ui de confianza, transparencia de fuentes, arquitectura de informacion, microcopy",
+    "canonical": "https://laboratoryum.example/experimentos/la-interfaz-que-oculta-el-origen",
+    "file": "/Users/soledadarismendi/Sites/Laboratoryum/CONTENIDO/LABORATORYUM-OPS/LAB-010/05-publicacion.md"
+  },
+  {
+    "lab": "LAB-011",
+    "title": "El texto que cambia de autor",
+    "slug": "/experimentos/el-texto-que-cambia-de-autor",
+    "title_tag": "El texto que cambia de autor | Experimento LAB-011",
+    "meta_description": "Protocolo de autoría para textos transformados por IA, edición y traducción.",
+    "keywords": "autoría en textos con ia, reescritura ia, trazabilidad editorial, ghostwriting ai",
+    "canonical": "https://laboratoryum.example/experimentos/el-texto-que-cambia-de-autor",
+    "file": "/Users/soledadarismendi/Sites/Laboratoryum/CONTENIDO/LABORATORYUM-OPS/LAB-011/05-publicacion.md"
+  },
+  {
+    "lab": "LAB-012",
+    "title": "La imagen que parece prueba",
+    "slug": "/experimentos/la-imagen-que-parece-prueba",
+    "title_tag": "La imagen que parece prueba | Experimento LAB-012",
+    "meta_description": "Guía de verificación visual con procedencia, contexto y metadatos.",
+    "keywords": "verificacion de imagenes, metadatos exif, imagen generada por ia, evidencia visual",
+    "canonical": "https://laboratoryum.example/experimentos/la-imagen-que-parece-prueba",
+    "file": "/Users/soledadarismendi/Sites/Laboratoryum/CONTENIDO/LABORATORYUM-OPS/LAB-012/05-publicacion.md"
+  },
+  {
+    "lab": "LAB-013",
+    "title": "La voz sin cuerpo",
+    "slug": "/experimentos/la-voz-sin-cuerpo",
+    "title_tag": "La voz sin cuerpo | Experimento LAB-013",
+    "meta_description": "Cómo evaluar voz clonada o sintética con trazabilidad técnica y contexto.",
+    "keywords": "voz clonada ia, autenticidad de audio, deepvoice, procedencia sonora",
+    "canonical": "https://laboratoryum.example/experimentos/la-voz-sin-cuerpo",
+    "file": "/Users/soledadarismendi/Sites/Laboratoryum/CONTENIDO/LABORATORYUM-OPS/LAB-013/05-publicacion.md"
+  },
+  {
+    "lab": "LAB-014",
+    "title": "El vídeo que ya no basta",
+    "slug": "/experimentos/el-video-que-ya-no-basta",
+    "title_tag": "El vídeo que ya no basta | Experimento LAB-014",
+    "meta_description": "Protocolo para verificar videos en la era deepfake sin caer en alarmismo.",
+    "keywords": "verificacion de video, deepfake detection, subtitulos alterados, confianza audiovisual",
+    "canonical": "https://laboratoryum.example/experimentos/el-video-que-ya-no-basta",
+    "file": "/Users/soledadarismendi/Sites/Laboratoryum/CONTENIDO/LABORATORYUM-OPS/LAB-014/05-publicacion.md"
+  },
+  {
+    "lab": "LAB-015",
+    "title": "La entrevista convertida en dato",
+    "slug": "/experimentos/la-entrevista-convertida-en-dato",
+    "title_tag": "La entrevista convertida en dato | Experimento LAB-015",
+    "meta_description": "Guía para transformar entrevistas en contenido sin empobrecer el testimonio.",
+    "keywords": "entrevista a resumen, perdida de matices, transcripcion responsable, cita contextual",
+    "canonical": "https://laboratoryum.example/experimentos/la-entrevista-convertida-en-dato",
+    "file": "/Users/soledadarismendi/Sites/Laboratoryum/CONTENIDO/LABORATORYUM-OPS/LAB-015/05-publicacion.md"
+  },
+  {
+    "lab": "LAB-016",
+    "title": "El dato que parece neutral",
+    "slug": "/experimentos/el-dato-que-parece-neutral",
+    "title_tag": "El dato que parece neutral | Experimento LAB-016",
+    "meta_description": "Checklist para evitar falsa neutralidad en tablas, gráficos y titulares.",
+    "keywords": "sesgo en visualizacion de datos, grafico engañoso, metodologia estadistica, data literacy",
+    "canonical": "https://laboratoryum.example/experimentos/el-dato-que-parece-neutral",
+    "file": "/Users/soledadarismendi/Sites/Laboratoryum/CONTENIDO/LABORATORYUM-OPS/LAB-016/05-publicacion.md"
+  },
+  {
+    "lab": "LAB-017",
+    "title": "El PDF que se resiste",
+    "slug": "/experimentos/el-pdf-que-se-resiste",
+    "title_tag": "El PDF que se resiste | Experimento LAB-017",
+    "meta_description": "Comparativa PDF vs HTML para mejorar accesibilidad, indexación y reutilización.",
+    "keywords": "pdf accesible, pdf vs html, extraccion de texto, lectura por ia",
+    "canonical": "https://laboratoryum.example/experimentos/el-pdf-que-se-resiste",
+    "file": "/Users/soledadarismendi/Sites/Laboratoryum/CONTENIDO/LABORATORYUM-OPS/LAB-017/05-publicacion.md"
+  },
+  {
+    "lab": "LAB-018",
+    "title": "El post que se desprende de su fuente",
+    "slug": "/experimentos/el-post-que-se-desprende-de-su-fuente",
+    "title_tag": "El post que se desprende de su fuente | Experimento LAB-018",
+    "meta_description": "Cómo evitar que una idea se tergiverse al circular como post, captura o cita.",
+    "keywords": "post descontextualizado, contenido en redes, fragmentacion de ideas, contexto de fuente",
+    "canonical": "https://laboratoryum.example/experimentos/el-post-que-se-desprende-de-su-fuente",
+    "file": "/Users/soledadarismendi/Sites/Laboratoryum/CONTENIDO/LABORATORYUM-OPS/LAB-018/05-publicacion.md"
+  },
+  {
+    "lab": "LAB-019",
+    "title": "La newsletter que desaparece",
+    "slug": "/experimentos/la-newsletter-que-desaparece",
+    "title_tag": "La newsletter que desaparece | Experimento LAB-019",
+    "meta_description": "Modelo de archivo para newsletters con trazabilidad, acceso y citabilidad.",
+    "keywords": "archivo de newsletter, email como fuente, citabilidad de boletines, memoria publica",
+    "canonical": "https://laboratoryum.example/experimentos/la-newsletter-que-desaparece",
+    "file": "/Users/soledadarismendi/Sites/Laboratoryum/CONTENIDO/LABORATORYUM-OPS/LAB-019/05-publicacion.md"
+  },
+  {
+    "lab": "LAB-020",
+    "title": "El formulario como conversación rota",
+    "slug": "/experimentos/el-formulario-como-conversacion-rota",
+    "title_tag": "El formulario como conversación rota | Experimento LAB-020",
+    "meta_description": "Guía para crear formularios responsables con mejor claridad y calidad de datos.",
+    "keywords": "ux de formularios, sesgo en campos, friccion de formulario, microcopy",
+    "canonical": "https://laboratoryum.example/experimentos/el-formulario-como-conversacion-rota",
+    "file": "/Users/soledadarismendi/Sites/Laboratoryum/CONTENIDO/LABORATORYUM-OPS/LAB-020/05-publicacion.md"
+  },
+  {
+    "lab": "LAB-021",
+    "title": "El archivo que no sabe qué contiene",
+    "slug": "/experimentos/el-archivo-que-no-sabe-que-contiene",
+    "title_tag": "El archivo que no sabe qué contiene | Experimento LAB-021",
+    "meta_description": "Plantilla de estructura mínima para que un archivo digital sea entendible y útil.",
+    "keywords": "organizacion documental, estructura de carpetas, metadatos minimos, archivo legible para ia",
+    "canonical": "https://laboratoryum.example/experimentos/el-archivo-que-no-sabe-que-contiene",
+    "file": "/Users/soledadarismendi/Sites/Laboratoryum/CONTENIDO/LABORATORYUM-OPS/LAB-021/05-publicacion.md"
+  },
+  {
+    "lab": "LAB-022",
+    "title": "La biografía que se convierte en fuente",
+    "slug": "/experimentos/la-biografia-que-se-convierte-en-fuente",
+    "title_tag": "La biografía que se convierte en fuente | LAB-022",
+    "meta_description": "Cómo construir una biografía verificable para web, medios y sistemas IA.",
+    "keywords": "biografia verificable, perfil profesional seo, identidad digital, bio para ia",
+    "canonical": "https://laboratoryum.example/experimentos/la-biografia-que-se-convierte-en-fuente",
+    "file": "/Users/soledadarismendi/Sites/Laboratoryum/CONTENIDO/LABORATORYUM-OPS/LAB-022/05-publicacion.md"
+  },
+  {
+    "lab": "LAB-023",
+    "title": "La obra fuera de contexto",
+    "slug": "/experimentos/la-obra-fuera-de-contexto",
+    "title_tag": "La obra fuera de contexto | Experimento LAB-023",
+    "meta_description": "Protocolo de ficha y contexto para obras culturales en circulación digital.",
+    "keywords": "ficha de obra, contexto artistico digital, citabilidad cultural, documentacion de obra",
+    "canonical": "https://laboratoryum.example/experimentos/la-obra-fuera-de-contexto",
+    "file": "/Users/soledadarismendi/Sites/Laboratoryum/CONTENIDO/LABORATORYUM-OPS/LAB-023/05-publicacion.md"
+  },
+  {
+    "lab": "LAB-024",
+    "title": "El mapa que decide la realidad",
+    "slug": "/experimentos/el-mapa-que-decide-la-realidad",
+    "title_tag": "El mapa que decide la realidad | Experimento LAB-024",
+    "meta_description": "Cómo documentar un lugar con contexto social, histórico y verificable.",
+    "keywords": "geodatos y sesgo de mapa, representacion de lugares, contexto espacial, cartografia digital",
+    "canonical": "https://laboratoryum.example/experimentos/el-mapa-que-decide-la-realidad",
+    "file": "/Users/soledadarismendi/Sites/Laboratoryum/CONTENIDO/LABORATORYUM-OPS/LAB-024/05-publicacion.md"
+  },
+  {
+    "lab": "LAB-025",
+    "title": "El testimonio que se convierte en prueba",
+    "slug": "/experimentos/el-testimonio-que-se-convierte-en-prueba",
+    "title_tag": "El testimonio que se convierte en prueba | LAB-025",
+    "meta_description": "Guía para convertir testimonios en evidencia útil, verificable y contextualizada.",
+    "keywords": "testimonio verificable, caso de exito con evidencia, reseñas confiables, trust signals",
+    "canonical": "https://laboratoryum.example/experimentos/el-testimonio-que-se-convierte-en-prueba",
+    "file": "/Users/soledadarismendi/Sites/Laboratoryum/CONTENIDO/LABORATORYUM-OPS/LAB-025/05-publicacion.md"
+  }
+]
