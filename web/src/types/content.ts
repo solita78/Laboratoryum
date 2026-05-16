@@ -20,6 +20,11 @@ export interface LaboratoryumStats {
   appliedSeries: number;
 }
 
+export interface ComparisonMatrix {
+  headers: string[];
+  rows: Record<string, string | number>[];
+}
+
 export interface LaboratoryumExperiment {
   code: string;
   number: number;
@@ -34,6 +39,12 @@ export interface LaboratoryumExperiment {
   status: ExperimentStatus;
   featured: boolean;
   tags: string[];
+  publishedAt?: string;
+  findings?: string[];
+  observations?: string;
+  protocol?: string;
+  matrix?: ComparisonMatrix;
+  demoUrl?: string;
 }
 
 export interface LaboratoryumContent {

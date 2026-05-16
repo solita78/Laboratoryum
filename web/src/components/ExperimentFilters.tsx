@@ -7,10 +7,10 @@ import type {
 
 type Props = {
   experiments: LaboratoryumExperiment[];
-  onChange(filtered: LaboratoryumExperiment[]): void;
+  onFilterChange(filtered: LaboratoryumExperiment[]): void;
 };
 
-export function ExperimentFilters({ experiments, onChange }: Props) {
+export function ExperimentFilters({ experiments, onFilterChange }: Props) {
   const [query, setQuery] = useState("");
   const [series, setSeries] = useState<ExperimentSeries | "all">("all");
   const [status, setStatus] = useState<ExperimentStatus | "all">("all");
@@ -45,9 +45,11 @@ export function ExperimentFilters({ experiments, onChange }: Props) {
     });
   }, [experiments, query, series, status, tag]);
 
+  // Use effect to notify parent of changes
+  // handleFilterChange in HomePage is now stable via useCallback, preventing the loop
   useEffect(() => {
-    onChange(filtered);
-  }, [filtered, onChange]);
+    onFilterChange(filtered);
+  }, [filtered, onFilterChange]);
 
   const resetFilters = () => {
     setQuery("");
@@ -57,15 +59,21 @@ export function ExperimentFilters({ experiments, onChange }: Props) {
   };
 
   return (
-    <section className="filters" role="search" aria-label="Filtro de experimentos">
+    <form
+      className="filters"
+      role="search"
+      aria-label="Filtro de experimentos"
+      onSubmit={(e) => e.preventDefault()}
+    >
       <div className="filter-field filter-search">
         <label htmlFor="exp-search" className="sr-only">
-          Buscar experimentos
+          Buscar experimentos por título, código o palabra clave
         </label>
         <input
           id="exp-search"
           className="lab-focus"
           type="search"
+          autoComplete="off"
           placeholder="Buscar por título, código o palabra clave"
           value={query}
           onChange={(e) => setQuery(e.target.value)}
@@ -74,7 +82,7 @@ export function ExperimentFilters({ experiments, onChange }: Props) {
 
       <div className="filter-field">
         <label htmlFor="exp-series" className="sr-only">
-          Filtrar por serie
+          Filtrar por serie del experimento
         </label>
         <select
           id="exp-series"
@@ -90,7 +98,7 @@ export function ExperimentFilters({ experiments, onChange }: Props) {
 
       <div className="filter-field">
         <label htmlFor="exp-status" className="sr-only">
-          Filtrar por estado
+          Filtrar por estado del experimento
         </label>
         <select
           id="exp-status"
@@ -107,7 +115,7 @@ export function ExperimentFilters({ experiments, onChange }: Props) {
 
       <div className="filter-field">
         <label htmlFor="exp-tag" className="sr-only">
-          Filtrar por tag
+          Filtrar por etiqueta o tecnología
         </label>
         <select id="exp-tag" className="lab-focus" value={tag} onChange={(e) => setTag(e.target.value)}>
           <option value="all">Todos los tags</option>
@@ -120,10 +128,15 @@ export function ExperimentFilters({ experiments, onChange }: Props) {
       </div>
 
       {hasActiveFilters && (
-        <button type="button" className="filter-reset lab-focus" onClick={resetFilters}>
+        <button
+          type="button"
+          className="filter-reset lab-focus"
+          onClick={resetFilters}
+          aria-controls="exp-search exp-series exp-status exp-tag"
+        >
           Limpiar filtros
         </button>
       )}
-    </section>
+    </form>
   );
 }

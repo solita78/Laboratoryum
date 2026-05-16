@@ -23,8 +23,27 @@
   display:grid;
   grid-template-columns:repeat(8,minmax(110px,1fr));
   grid-auto-rows:140px;
-  gap:10px;
+  gap:12px;
   align-items:stretch;
+}
+
+@media (hover: hover) {
+  .periodic-exp-cell:hover{
+    z-index:100;
+    border-color:#ffffff;
+    background:#1b4a37;
+    transform: scale(1.15);
+    box-shadow:0 20px 40px rgba(0,0,0,0.6), 0 0 15px rgba(42,240,164,0.4);
+    overflow: visible;
+  }
+  .periodic-exp-cell:hover .periodic-overlay {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+  .periodic-exp-cell:hover .periodic-title {
+    -webkit-line-clamp: unset;
+  }
 }
 
 .periodic-exp-cell{
@@ -36,28 +55,37 @@
   width:100%;
   min-height:0;
   padding:12px;
-  border:1px solid #9dd9b7;
+  border:2px solid #a0eec0; /* Increased contrast border */
   border-radius:6px;
-  background:#17392b;
+  background:#0e2a1f; /* Darker background for contrast */
   text-decoration:none;
   overflow:hidden;
-  transition:border-color var(--t-base) ease,background-color var(--t-base) ease,transform var(--t-base) ease,box-shadow var(--t-base) ease;
-}
-
-.periodic-exp-cell:hover{
-  z-index:30;
-  border-color:#f0fff8;
-  background:#1f4b39;
-  transform:translateY(-2px) scale(1.04);
-  box-shadow:0 16px 30px rgba(0,0,0,.48),0 0 0 1px rgba(240,255,248,.42) inset;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .periodic-topline{display:flex;justify-content:space-between;align-items:center;gap:8px}
 .atomic-index{font-family:var(--font-ui);font-size:.76rem;color:#d2ffea}
 .periodic-code{font-size:.68rem}
 .periodic-symbol{font-family:var(--font-ui);font-size:2.25rem;line-height:1;font-weight:700;color:#f2fff9}
-.periodic-title{font-size:.95rem;line-height:1.26;color:#effff8;margin:0;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
-.periodic-description{font-size:.83rem;line-height:1.3;color:#d8ffeb;margin:0;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.periodic-title{font-size:.95rem;line-height:1.26;color:#ffffff;margin:0;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;font-weight: 500;}
+.periodic-overlay {
+  position: absolute;
+  top: 100%;
+  left: -2px;
+  right: -2px;
+  background: inherit;
+  border: inherit;
+  border-top: none;
+  border-radius: 0 0 6px 6px;
+  padding: 0 12px 12px;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: all 0.3s ease;
+  pointer-events: none;
+  z-index: 101;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+}
+.periodic-description{font-size:.83rem;line-height:1.4;color:#e0fff0;margin:0;}
 
 .filters{position:sticky;top:0;z-index:10;display:grid;grid-template-columns:1fr;gap:var(--sp-2);padding:var(--sp-3);border:1px solid var(--line);border-radius:var(--r-md);background:color-mix(in srgb,var(--bg-1) 88%,black);margin-bottom:var(--sp-3)}
 .filter-field{min-width:0}.filter-search{grid-column:1/-1}
@@ -85,8 +113,20 @@
 .site-footer-menu a:hover{color:#f2fff9}
 
 @media (max-width:1200px){
-  .periodic-shell{width:100%}
-  .periodic-grid{grid-template-columns:repeat(8,126px);grid-auto-rows:168px;overflow-x:auto;padding-bottom:8px}
+  .periodic-shell{
+    width:100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 1rem;
+    margin-bottom: var(--sp-4);
+    mask-image: linear-gradient(to right, black 85%, transparent 100%);
+  }
+  .periodic-grid{
+    grid-template-columns:repeat(8,140px);
+    grid-auto-rows:180px;
+    width: max-content;
+    padding-right: 2rem;
+  }
   .periodic-exp-cell{padding:10px}
   .periodic-symbol{font-size:2rem}
   .periodic-description{-webkit-line-clamp:2}
@@ -95,10 +135,6 @@
 @media (max-width:768px){
   .site-header{flex-direction:column;align-items:flex-start}
   .site-menu{flex-wrap:wrap;gap:var(--sp-2)}
-  .periodic-grid{grid-template-columns:repeat(8,132px);grid-auto-rows:164px}
-  .periodic-symbol{font-size:1.85rem}
-  .periodic-title{font-size:.88rem}
-  .periodic-description{font-size:.76rem}
   .filters{grid-template-columns:repeat(2,minmax(0,1fr))}
   .filter-search{grid-column:1/-1}
   .exp-list{grid-template-columns:1fr}
