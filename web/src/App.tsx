@@ -1,6 +1,10 @@
 import { Link, Outlet, ScrollRestoration, useLocation } from "react-router-dom";
 import { GlitchLogo } from "./components/GlitchLogo";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import contentJson from "./data/laboratoryum-content.json";
+import type { LaboratoryumContent } from "./types/content";
+
+const content = contentJson as LaboratoryumContent;
 
 export default function App() {
   const { pathname, hash } = useLocation();
@@ -9,14 +13,12 @@ export default function App() {
     if (hash) {
       const element = document.getElementById(hash.slice(1));
       if (element) {
-        // Use a small timeout to ensure the DOM is ready if navigating between routes
         const timer = setTimeout(() => {
           element.scrollIntoView({ behavior: "smooth" });
         }, 100);
         return () => clearTimeout(timer);
       }
     } else if (pathname === "/") {
-      // If navigating to home without hash, scroll to top
       window.scrollTo(0, 0);
     }
   }, [pathname, hash]);
@@ -24,10 +26,12 @@ export default function App() {
   return (
     <>
       <a className="skip-link" href="#main-content">Saltar al contenido principal</a>
-      <header className="site-header lab-container" aria-label="Encabezado principal">
+
+      <aside className="site-sidebar lab-container" aria-label="Navegación lateral">
         <Link to="/" className="site-brand" aria-label="Laboratoryum, ir al inicio">
           <GlitchLogo />
         </Link>
+
         <nav aria-label="Menú principal">
           <ul className="site-menu">
             <li><Link to="/#experimentos">Experimentos</Link></li>
@@ -36,19 +40,26 @@ export default function App() {
             <li><Link to="#footer">Contacto</Link></li>
           </ul>
         </nav>
-      </header>
 
-      <Outlet />
+        <section className="sidebar-stats">
+          <h2 className="sidebar-section-title">ESTADÍSTICAS</h2>
+          <p className="lab-meta">{content.stats.totalExperiments} LABS ACTIVOS</p>
+          <p className="lab-meta">{content.experiments.filter(e => e.featured).length} DESTACADOS</p>
+        </section>
 
-      <footer id="footer" className="site-footer lab-container">
-        <p>Laboratoryum</p>
-        <nav aria-label="Menú de pie de página">
-          <ul className="site-footer-menu">
-            <li><Link to="/">Inicio</Link></li>
-            <li><Link to="/#experimentos">Experimentos</Link></li>
-          </ul>
-        </nav>
-      </footer>
+        <div id="sidebar-filters-target">
+          {/* Slot for filters if needed on homepage */}
+        </div>
+      </aside>
+
+      <main id="main-content" className="site-main">
+        <Outlet />
+
+        <footer id="footer" className="site-footer lab-container">
+          <p className="lab-meta">Laboratoryum · 2026</p>
+        </footer>
+      </main>
+
       <ScrollRestoration />
     </>
   );

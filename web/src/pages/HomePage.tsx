@@ -19,58 +19,47 @@ export function HomePage({ content }: Props) {
     });
   }, []);
 
-  const featuredCount = useMemo(
-    () => content.experiments.filter((exp) => exp.featured).length,
-    [content.experiments],
-  );
-
   return (
-    <main id="main-content" tabIndex={-1} className="lab-container">
+    <div className="home-layout">
       <Helmet>
         <title>Laboratoryum | Investigación y Futuros de la Web</title>
         <meta name="description" content="Laboratorio independiente sobre futuros de la web: IA, automatización, accesibilidad y cultura digital." />
-        <meta property="og:title" content="Laboratoryum | Investigación y Futuros de la Web" />
-        <meta property="og:description" content="Espacio de investigación y experimentación sobre IA, automatización y cultura digital." />
-        <meta property="og:type" content="website" />
       </Helmet>
 
-      <header className="lab-header">
-        <p>Laboratoryum es un laboratorio independiente sobre futuros de la web: un espacio de investigación, prototipado y experimentación sobre IA, automatización, accesibilidad, lenguaje, cultura digital y agentes.</p>
-        <p className="lab-meta">
-          {content.stats.totalExperiments} experimentos · {featuredCount} destacados
-        </p>
-      </header>
+      <div className="lab-container">
+        <header className="lab-header">
+          <p className="hero-text">
+            Laboratoryum es un laboratorio independiente sobre futuros de la web: un espacio de investigación, prototipado y experimentación sobre IA, automatización, accesibilidad, lenguaje, cultura digital y agentes.
+          </p>
+        </header>
 
-      <section id="experimentos">
-        <PeriodicGrid experiments={content.experiments} limit={12} />
-      </section>
+        <section id="experimentos" className="periodic-section">
+          <h2 className="sidebar-section-title">ÍNDICE PERIÓDICO</h2>
+          <PeriodicGrid experiments={content.experiments} limit={12} />
+        </section>
 
-      <section id="recursos">
-        <h2 className="lab-section-title">Explorar todos los experimentos</h2>
-        <ExperimentFilters experiments={content.experiments} onFilterChange={handleFilterChange} />
+        <section id="recursos" className="archive-section">
+          <h2 className="sidebar-section-title">ARCHIVO DE EXPERIMENTOS</h2>
+          <div className="archive-controls">
+             <ExperimentFilters experiments={content.experiments} onFilterChange={handleFilterChange} />
+             <p className="lab-meta results-count">
+               RESULTADOS: {filtered.length} / {content.experiments.length}
+             </p>
+          </div>
 
-        <p className="lab-meta" role="status" aria-live="polite">
-          {isPending ? "Actualizando resultados..." : `Mostrando ${filtered.length} de ${content.experiments.length} experimentos`}
-        </p>
-
-        <div style={{ opacity: isPending ? 0.7 : 1, transition: "opacity 0.2s" }}>
-          {filtered.length === 0 ? (
-            <div className="exp-empty" role="status" aria-live="polite">
-              No encontramos resultados para tu búsqueda. Prueba con otro término o limpia los filtros.
-            </div>
-          ) : (
-            <div className="exp-list" aria-live="polite">
-              {filtered.map((experiment) => (
+          <div className="exp-list" style={{ opacity: isPending ? 0.7 : 1, transition: "opacity 0.2s" }}>
+            {filtered.length === 0 ? (
+              <div className="exp-empty">
+                No se encontraron experimentos con los filtros seleccionados.
+              </div>
+            ) : (
+              filtered.map((experiment) => (
                 <ExperimentCard key={experiment.code} experiment={experiment} />
-              ))}
-            </div>
-          )}
-        </div>
-      </section>
-
-      <section id="archivo">
-        {/* Placeholder for archivo if needed */}
-      </section>
-    </main>
+              ))
+            )}
+          </div>
+        </section>
+      </div>
+    </div>
   );
 }
